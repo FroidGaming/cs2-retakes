@@ -40,16 +40,7 @@ public static class AllocationManager
 
         if (player.Team == CsTeam.CounterTerrorist)
         {
-            // @klippy
-            if (player.PlayerName.Trim() == "klip")
-            {
-                player.GiveNamedItem(CsItem.M4A4);
-            }
-            else
-            {
-                player.GiveNamedItem(CsItem.M4A1S);
-            }
-
+            player.GiveNamedItem(CsItem.M4A1S);
             player.GiveNamedItem(CsItem.Deagle);
         }
 
