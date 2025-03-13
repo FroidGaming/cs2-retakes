@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Fuiste puesto en la lista de espera.",
   "retakes.queue.waiting": "La partida está llena con [GREEN]{0}[NORMAL] jugadores. Te encuentras en la lista de espera.",
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",

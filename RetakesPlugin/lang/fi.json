@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Sinut on laitettu jonoon odottamaan peliin siirtymistä.",
   "retakes.queue.waiting": "Peli on tällä hetkellä täysi [GREEN]{0}[NORMAL] pelaajalla. Olet jonossa odottamassa peliin.",
   "retakes.queue.replaced_by_vip": "Sinun paikkasi pelissä otti VIP pelaaja [GREEN]{0}[NORMAL].",

@@ -1,5 +1,5 @@
 ﻿{
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "您已被放入等待队列。",
   "retakes.queue.waiting": "游戏当前已满，共有[GREEN]{0}[NORMAL]名玩家。您正在等待队列中。",
   "retakes.queue.replaced_by_vip": "您已经被VIP用户插队[GREEN]{0}[NORMAL]。",

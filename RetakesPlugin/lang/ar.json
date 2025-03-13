@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "لقد تم وضعك في قائمة الانتظار.",
   "retakes.queue.waiting": "اللعبة ممتلئة حالياً ب[GREEN]{0}[NORMAL] لاعبين. أنت في قائمة الانتظار.",
   "retakes.queue.replaced_by_vip": "لقد تم استبدالك بلاعب VIP [GREEN]{0}[NORMAL].",

@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Sie befinden sich in der Warteschlange.",
   "retakes.queue.waiting": "Das Spiel ist aktuell voll mit [GREEN]{0}[NORMAL] Spielern. Sie sind in der Warteschlange.",
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",

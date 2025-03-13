@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Вы в очереди. Ожидайте.",
   "retakes.queue.waiting": "Сейчас играет максимальное количество игроков - [GREEN]{0}[NORMAL]. Вы в очереди.",
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T[NORMAL] против [PURPLE]{2} CT",

@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Du er blevet placeret i køen.",
   "retakes.queue.waiting": "Dette spil er fuldt med [GREEN]{0}[NORMAL] spillere. Du er blevet placeret i køen.",
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} T'er[NORMAL] mod [PURPLE]{2} CT'er",

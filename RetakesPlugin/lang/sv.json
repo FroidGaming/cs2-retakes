@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Du är placerad i kön.",
   "retakes.queue.waiting": "Matchen är just nu full med [GREEN]{0}[NORMAL] spelare. Du är i kö.",
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terrorister[NORMAL] vs [PURPLE]{2} Anti-terrorister.",

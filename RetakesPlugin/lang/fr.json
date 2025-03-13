@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Vous avez été placé dans la file d'attente.",
   "retakes.queue.waiting": "La partie est actuellement complète avec [GREEN]{0}[NORMAL] joueurs. Vous êtes dans la file d'attente.",
   "retakes.bombsite.announcement": "Reprise [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Terroristes[NORMAL] contre [PURPLE]{2} CTs",

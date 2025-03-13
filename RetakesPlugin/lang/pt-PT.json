@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Você foi colocado na fila de espera, aguarda a próxima ronda.",
   "retakes.queue.waiting": "As equipas estão cheias de momento com [GREEN]{0}[NORMAL] players. Você está na fila de espera.",
   "retakes.queue.replaced_by_vip": "Você foi substituído pelo jogador VIP [GREEN]{0}[NORMAL].",

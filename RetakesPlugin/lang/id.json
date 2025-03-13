@@ -1,5 +1,5 @@
 {
-    "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+    "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
     "retakes.queue.joined": "Anda telah masuk ke dalam antrian.",
     "retakes.queue.waiting": "Permainan sedang penuh dengan [GREEN]{0}[NORMAL] pemain. Anda berada dalam antrian.",
     "retakes.queue.replaced_by_vip": "Anda telah digantikan oleh pemain VIP [GREEN]{0}[NORMAL].",

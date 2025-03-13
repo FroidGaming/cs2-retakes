@@ -1,5 +1,5 @@
 {
-  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+  "retakes.prefix": " [GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Siz kutish navbatiga qo‘shildingiz.",
   "retakes.queue.waiting": "O‘yin hozirda [GREEN]{0}[NORMAL] o‘yinchilar bilan to‘la. Siz kutish navbatidasiz.",
   "retakes.queue.replaced_by_vip": "Siz vip o‘yinchi [GREEN]{0}[NORMAL] bilan almashtirildingiz.",
