@@ -1,4 +1,6 @@
-﻿using CounterStrikeSharp.API.Modules.Utils;
+﻿using CounterStrikeSharp.API.Core;
+using CounterStrikeSharp.API.Modules.Utils;
+using CounterStrikeSharp.API.Core.Translations;
 using Microsoft.Extensions.Localization;
 
 namespace RetakesPlugin.Modules;
@@ -17,14 +19,17 @@ public class Translator
         return _stringLocalizerImplementation.GetAllStrings(includeParentCultures);
     }
 
-    public string this[string name] => Translate(name);
+    public string this[string name] => Translate(null, name);
 
-    public string this[string name, params object[] arguments] => Translate(name, arguments);
+    public string this[string name, params object[] arguments] => Translate(null, name, arguments);
+    public string this[CCSPlayerController? player, string name, params object[] arguments] => Translate(player, name, arguments);
+
 
     private const string CenterModifier = "center.";
     private const string HtmlModifier = "html.";
 
-    private string Translate(string key, params object[] arguments)
+
+    private string Translate(CCSPlayerController? player, string key, params object[] arguments)
     {
         var isCenter = key.StartsWith(CenterModifier);
         var isHtml = key.StartsWith(HtmlModifier);
@@ -38,14 +43,24 @@ public class Translator
             key = key.Substring(HtmlModifier.Length);
         }
 
-        var localizedString = _stringLocalizerImplementation[key, arguments];
+        string localizedString;
 
-        if (localizedString == null || localizedString.ResourceNotFound)
+        if (player != null && !player.IsBot)
         {
-            return key;
+            localizedString = _stringLocalizerImplementation.ForPlayer(player, key, arguments);
+        }
+        else
+        {
+            LocalizedString localized = _stringLocalizerImplementation[key, arguments];
+            localizedString = localized.ResourceNotFound ? key : localized.Value;
         }
 
-        var translation = localizedString.Value;
+        if (localizedString == key || localizedString == "")
+        {
+            return key; // Handle missing translation
+        }
+
+        var translation = localizedString;
 
         // Handle translation colours
         return translation

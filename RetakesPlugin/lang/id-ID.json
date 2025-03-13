@@ -1,0 +1,14 @@
+{
+    "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
+    "retakes.queue.joined": "Anda telah masuk ke dalam antrian.",
+    "retakes.queue.waiting": "Permainan sedang penuh dengan [GREEN]{0}[NORMAL] pemain. Anda berada dalam antrian.",
+    "retakes.queue.replaced_by_vip": "Anda telah digantikan oleh pemain VIP [GREEN]{0}[NORMAL].",
+    "retakes.queue.vip_took_place": "Anda telah menggantikan tempat [GREEN]{0}[NORMAL] dalam permainan.",
+    "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Teroris[NORMAL] vs [PURPLE]{2} CT",
+    "retakes.voices.toggle": "Anda telah {0} pengumuman suara!",
+    "retakes.teams.scramble": "Tim teroris telah menang [GREEN]{0}[NORMAL] ronde berturut-turut. [PURPLE]Tim akan diacak!",
+    "retakes.teams.almost_scramble": "Tim teroris telah menang [GREEN]{0}[NORMAL] ronde berturut-turut - jika mereka menang [GREEN]{1} lagi, [PURPLE]tim akan diacak.",
+    "retakes.teams.win_streak": "Tim teroris telah menang [GREEN]{0}[NORMAL] ronde berturut-turut!",
+    "retakes.teams.win_streak_over": "Tim CT telah mengakhiri rentetan kemenangan sepanjang [GREEN]{0}[NORMAL] ronde!",
+    "retakes.teams.admin_scramble": "{0} telah mengatur tim untuk diacak di ronde berikutnya."
+}

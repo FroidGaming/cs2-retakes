@@ -1,11 +1,8 @@
 {
-  "retakes.prefix": "[[GREEN]Retakes[NORMAL]] ",
-  
+  "retakes.prefix": "[GREEN]FroidGaming.com[NORMAL] • ",
   "retakes.queue.joined": "Zostałeś dodany do kolejki.",
   "retakes.queue.waiting": "Gra jest pełna z [GREEN]{0}[NORMAL] graczami. Jesteś aktualnie w kolejce.",
-
   "retakes.bombsite.announcement": "Retake [GREEN]{0}[NORMAL]: [LIGHT_RED]{1} Ts[NORMAL] vs [PURPLE]{2} CTs",
-
   "retakes.teams.scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd. [PURPLE]Drużyny zostaną wymieszane!",
   "retakes.teams.almost_scramble": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd - jeśli wygrają [GREEN]{1} raz(y), [PURPLE]drużyny zostaną wymieszane.",
   "retakes.teams.win_streak": "Terroryści wygrali [GREEN]{0}[NORMAL] rund pod rząd!",

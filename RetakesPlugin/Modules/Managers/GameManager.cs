@@ -32,8 +32,11 @@ public class GameManager
     public void ScrambleNextRound(CCSPlayerController? admin = null)
     {
         _scrambleNextRound = true;
-        Server.PrintToChatAll(
-            $"{RetakesPlugin.MessagePrefix}{_translator["retakes.teams.admin_scramble", admin?.PlayerName ?? "The server owner"]}");
+        foreach (var player in Utilities.GetPlayers().Where(x => x.IsValid))
+        {
+            var msg = _translator[player, "retakes.teams.admin_scramble", admin?.PlayerName ?? "The server owner"];
+            player.PrintToChat($"{RetakesPlugin.MessagePrefix}{msg}");
+        }
     }
 
     private void ScrambleTeams()
@@ -83,20 +86,28 @@ public class GameManager
 
         if (shouldScrambleNow)
         {
-            Server.PrintToChatAll(
-                $"{RetakesPlugin.MessagePrefix}{_translator["retakes.teams.scramble", _consecutiveRoundWinsToScramble]}");
-
+            foreach (var player in Utilities.GetPlayers().Where(x => x.IsValid))
+            {
+                var msg = _translator[player, "retakes.teams.scramble", _consecutiveRoundWinsToScramble];
+                player.PrintToChat($"{RetakesPlugin.MessagePrefix}{msg}");
+            }
             ScrambleTeams();
         }
         else if (shouldAlmostScramble)
         {
-            Server.PrintToChatAll(
-                $"{RetakesPlugin.MessagePrefix}{_translator["retakes.teams.almost_scramble", _consecutiveRoundsWon, roundsLeftToScramble]}");
+            foreach (var player in Utilities.GetPlayers().Where(x => x.IsValid))
+            {
+                var msg = _translator[player, "retakes.teams.almost_scramble", _consecutiveRoundsWon, roundsLeftToScramble];
+                player.PrintToChat($"{RetakesPlugin.MessagePrefix}{msg}");
+            }
         }
         else if (_consecutiveRoundsWon >= 3)
         {
-            Server.PrintToChatAll(
-                $"{RetakesPlugin.MessagePrefix}{_translator["retakes.teams.win_streak", _consecutiveRoundsWon]}");
+            foreach (var player in Utilities.GetPlayers().Where(x => x.IsValid))
+            {
+                var msg = _translator[player, "retakes.teams.win_streak", _consecutiveRoundWinsToScramble];
+                player.PrintToChat($"{RetakesPlugin.MessagePrefix}{msg}");
+            }
         }
     }
 
@@ -104,8 +115,11 @@ public class GameManager
     {
         if (_consecutiveRoundsWon >= 3)
         {
-            Server.PrintToChatAll(
-                $"{RetakesPlugin.MessagePrefix}{_translator["retakes.teams.win_streak_over", _consecutiveRoundsWon]}");
+            foreach (var player in Utilities.GetPlayers().Where(x => x.IsValid))
+            {
+                var msg = _translator[player, "retakes.teams.win_streak_over", _consecutiveRoundsWon];
+                player.PrintToChat($"{RetakesPlugin.MessagePrefix}{msg}");
+            }
         }
 
         _consecutiveRoundsWon = 0;
