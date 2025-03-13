@@ -71,7 +71,7 @@ public class QueueManager
                 Helpers.CheckRoundDone();
                 return HookResult.Continue;
             }
-            
+
             if (!_shouldPreventTeamChangesMidRound)
             {
                 Helpers.Debug($"[{player.PlayerName}] Preventing team changes mid round is disabled, allowing team change.");
@@ -99,6 +99,16 @@ public class QueueManager
 
                 player.ChangeTeam(CsTeam.Spectator);
                 return HookResult.Handled;
+            }
+
+            if (_roundCounterTerrorists.Contains(player) && player.Team != CsTeam.CounterTerrorist)
+            {
+                player.ChangeTeam(CsTeam.CounterTerrorist);
+            }
+
+            if (_roundTerrorists.Contains(player) && player.Team != CsTeam.Terrorist)
+            {
+                player.ChangeTeam(CsTeam.Terrorist);
             }
 
             Helpers.Debug(
@@ -332,7 +342,7 @@ public class QueueManager
         {
             return;
         }
-        
+
         _roundTerrorists = ActivePlayers
             .Where(player => Helpers.IsValidPlayer(player) && player.Team == CsTeam.Terrorist).ToList();
         _roundCounterTerrorists = ActivePlayers
