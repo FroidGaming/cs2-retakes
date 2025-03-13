@@ -101,12 +101,12 @@ public class QueueManager
                 return HookResult.Handled;
             }
 
-            if (_roundCounterTerrorists.Contains(player) && player.Team != CsTeam.CounterTerrorist)
+            if (toTeam == CsTeam.CounterTerrorist && player.Team != CsTeam.CounterTerrorist)
             {
                 player.ChangeTeam(CsTeam.CounterTerrorist);
             }
 
-            if (_roundTerrorists.Contains(player) && player.Team != CsTeam.Terrorist)
+            if (toTeam == CsTeam.Terrorist && player.Team != CsTeam.Terrorist)
             {
                 player.ChangeTeam(CsTeam.Terrorist);
             }
